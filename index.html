@@ -53,6 +53,14 @@
                <!-- Madurai -->
                <section data-background="images/madurai.jpg" data-background-size="100%">
                </section>
+               <!-- Modelling soil -->
+               <section>
+                 <h2>Scales in modelling soil</h2>
+                 <figure>
+                   <img style = "border:0; box-shadow: 0 0 0px;" src="images/soil-scale.png" width="100%">
+                 </figure>
+               </section>
+
                <!-- Numerical methods -->
                <section>
                 <h3>Cambridge-Berkeley Computational Geomechanics</h3>
@@ -68,81 +76,6 @@
                       more information and software tools</a>
                    </figcaption>
                 </figure>
-               </section>
-               <!-- Lattice Element Method -->
-               <section>
-                 <h2>Lattice Element Method</h2>
-                 <div style="float: left; width: 50%;">
-                   <figure>
-                     <img src="images/lem.png" style="width:80%">
-                     <figcaption>
-                       Beam elements representing microscopic stiffness
-                     </figcaption>
-                   </figure>
-                 </div>
-                 <div style="float: right; width: 50%;">
-                   <figure>
-                     <img src="images/pipe-network.png" style="width:80%">
-                     <figcaption>
-                        Pipe-flow $$q = - \frac{h^3}{12\mu}\frac{dp}{dx}$$
-                      </figcaption>
-                   </figure>
-                 </div>
-                 <div style="clear: both; width:100%">
-                   The LEM code is capable of modelling 30 million beam elements.
-                 </div>
-               </section>
-               <!-- LEM fracturing -->
-               <section>
-                  <h2>LEM fracturing</h2>
-                  <video  width="100%" controls loop>
-                     <source src="media/lem.webm" type="video/webm">
-                     Your browser does not support the video tag.
-                  </video>
-                  <p>Wong et al., (2016)</p>
-               </section>
-               <!-- ABM -->
-               <section>
-                  <h2>Agent Based Modelling of cities</h2>
-                  <video  width="125%" controls loop>
-                     <source src="media/ca-abm/abm.webm" type="video/webm">
-                     Your browser does not support the video tag.
-                  </video>
-                  <p>Soga et al., (2017)</p>
-               </section>
-               <!-- HSV2 -->
-               <section>
-                  <h2>Network analysis of Herpes Simplex Virus (HSV2)</h2>
-                  <div style="float: left; width: 50%;">
-                     <figure>
-                        <img style = "border:0;" src="images/virus/chimpanzee-rainforest.png" width="100%">
-                        <figcaption>
-                           Fossil data
-                        </figcaption>
-                     </figure>
-                  </div>
-                  <div style="float: right; width: 50%;">
-                     <figure>
-                        <img style = "border:0;" src="images/virus/dag-it.png" width="90%">
-                        <figcaption>
-                           Transmission route
-                        </figcaption>
-                     </figure>
-                  </div>
-                  <div class="block" style="clear: both; width: 100%">
-                    <i>Paranthropus boisei</i> is the intermediary species that gave humans herpes! <br/!> (Underdown et al., 2017)
-                  </div>
-               </section>
-               <!-- HSV2 News -->
-               <section>
-                  <h2>Top 5% of all research outputs scored by Altmetric</h2>
-                  <figure>
-                     <img style="border:0;" src="images/virus/hsv2.png" width="100%">
-                     <figcaption>
-                        Cambridge: 24 things we learned in 2017<br/>
-                        #3. We found out who gave us herpes
-                     </figcaption>
-                  </figure>
                </section>
             </section>
             <section>
@@ -370,6 +303,61 @@
                   </video>
                   <p>Selborne case study of a 9 m high cut-slope slope (Soga et al., 2016)</p>
                </section>
+                           <!-- Code development -->
+               <section>
+                 <h2>HPC MPM code</h2>
+                 <div style="float: left; width: 40%;">
+                   <p>
+                     <ul>
+                       <li>Generic Templatised C++14</li>
+                       <li>2D/3D MPM Code</li>
+	               <li>Generalise Interpolation Material Point</li>
+                       <li>Distributed MPI</li>
+                       <li>Intel TBB  parallelisation</li>
+                       <li>Isoparametric elements</li>
+                       <li>HDF5 data stores</li>
+                       <li>Jupyter Notebooks integration</li>
+                       <li>Material models:</li>
+	               <ul>
+                         <li>Linear elastic</li>
+                         <li>Mohr coulomb</li>
+                         <li>Bingham fluid</li>
+                         <li>Newtonian</li>
+                       </ul>
+                     </ul>
+                   </p>
+                 </div>
+                 <div style="float: right; width: 60%;">
+                   <img style = "border:0;" src="images/mpm-code-overview.png" width="80%">
+                 </div>
+               </section>
+               <!-- Rendering-->
+               <section>
+                 <h2>Photo-realistic rendering</h2>
+                 <ul>
+                   <li>HDF5 + VTK</li>
+                   <li>Disney Partio: Houdini / Maya / Pixar's RenderMan</li>
+                 </ul>
+                 <figure>
+                   <img style = "border:0;" src="images/mpm-rendering.png" width="80%">
+                   <figcaption>
+                     Photo-realistic rendering of compression of choco balls with Houdini
+                   </figcaption>
+                 </figure>
+               </section>
+               <!-- Disney MPM -->
+               <section>
+                <h2>Disney's Frozen: Snow simulation</h2>
+                <video  width="80%"  controls loop muted>
+                  <source src="media/disney-mpm-snow.mp4" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+                <p>
+                  <a href="https://www.youtube.com/watch?v=O0kyDKu8K-k">Sungkwan Park et al (2014)
+                  </a>
+                </p>
+              </section>
+
             </section>
             <!-- Underwater landslides -->
             <section>
@@ -943,12 +931,27 @@
                   </figure>
                </section>
                <!-- CPU v GPU -->
-               <!--
-                  <section>
-                    <h3>CPU v GPU</h3>
-                    <img style = "border:0;" src="images/cpu_gpu.png" width ="100%">
-                  </section>
-                  -->
+               <section>
+                 <h3>CPU v GPU</h3>
+                 <img style = "border:0;" src="images/cpu_gpu.png" width ="100%">
+               </section>
+              <section>
+                <h2>CPU v GPU</h2>
+                <video  width="80%" controls loop>
+                  <source src="media/cpu-gpu.mp4" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+                <p>
+                  <a href="https://www.youtube.com/watch?v=ZrJeYFxpUyQ">MythBusters / Nvidia
+                  </a>
+                </p>
+              </section>
+
+              <section>
+                <h3>Super computing</h3>
+                <img src="images/super-computer.png" width="80%">
+              </section>
+
                <!-- GPU -->
                <section>
                   <h3>LBM-DEM Multi-GPU implementation</h3>
@@ -985,6 +988,180 @@
                   </video>
                </section>
             </section>
+            <section>
+            <!-- Lattice Element Method -->
+              <!-- Lattice Element Method -->
+              <section>
+                <h2>Lattice Element Method</h2>
+                <div style="float: left; width: 50%;">
+	          <figure>
+	            <img src="images/lem.png" style="width:80%">
+	          </figure>
+	        </div>	
+                <div style="float: right; width: 50%;">
+	          <figure>
+	            <img src="images/voro.png" width="100%">
+	          </figure>
+	        </div>
+              </section>
+
+              <!-- Tension test -->
+              <section>
+                <h2>LEM Tension test</h2>
+                <figure>
+	          <img src="images/lem_tension_test.png" style="width:100%">
+	        </figure>
+	      </section>
+              
+              <!-- Tension test -->
+              <section>
+                <h2>LEM: Tension test (uniform)</h2>
+                <div style="float: left; width: 50%;">
+                  <video  id="lem_uniform" width="100%">
+                    <source src="media/tension_uniform_disp.webm" type="video/webm">
+                      Your browser does not support the video tag.
+                  </video>
+	        </div>	
+                <div style="float: right; width: 50%;">
+                  <video id="lem_uniform_crack" width="100%">
+                    <source src="media/tension_uniform_crack.webm" type="video/webm">
+                      Your browser does not support the video tag.
+                  </video>
+	        </div>
+                <div class="media-buttons">
+                  <input type="button" id="play-button" onclick="PlayVideo('lem_uniform');PlayVideo('lem_uniform_crack')"; this.disable=true; pause-button.disable=false; value="Play" />
+                  <input type="button" id="pause-button" onclick="PauseVideo('lem_uniform');PauseVideo('lem_uniform_crack')"; this.disable=true; play-button.disable=false; value="Pause" />
+                </div>
+              </section>
+                            
+              <!-- Tension test -->
+              <section>
+                <h2>LEM: Tension test (Log-Normal 1.0)</h2>
+                <div style="float: left; width: 50%;">
+                  <video id="lem_ln1"  width="100%">
+                    <source src="media/tension_ln1.0_disp.webm" type="video/webm">
+                      Your browser does not support the video tag.
+                  </video>
+	        </div>	
+                <div style="float: right; width: 50%;">
+                  <video id="lem_ln1_crack" width="100%">
+                    <source src="media/tension_ln1.0_crack.webm" type="video/webm">
+                      Your browser does not support the video tag.
+                  </video>
+	        </div>
+                <div class="media-buttons">
+                  <input type="button" id="play-button" onclick="PlayVideo('lem_ln1');PlayVideo('lem_ln1_crack')"; this.disable=true; pause-button.disable=false; value="Play" />
+                  <input type="button" id="pause-button" onclick="PauseVideo('lem_ln1');PauseVideo('lem_ln1_crack')"; this.disable=true; play-button.disable=false; value="Pause" />
+                </div>
+              </section>
+
+                                          
+              <!-- Tension test -->
+              <section>
+                <h2>LEM Tension test</h2>
+                <div style="float: left; width: 50%;">
+                  <figure>
+	            <img src="images/tension_uniform_crack.png" style="width:100%">
+                    <figcaption>Uniform</figcaption>
+	          </figure>
+	        </div>	
+                <div style="float: right; width: 50%;">
+                  <figure>
+	            <img src="images/tension_ln1.0_crack.png" style="width:100%">
+                    <figcaption>LogNormal 1.0</figcaption>
+	          </figure>
+	        </div>
+              </section>
+
+              <!-- LEM Fluid coupling -->
+              <section>
+                <h2>Lattice Element Method - Fluid coupling</h2>
+                <div style="float: left; width: 50%;">
+                  <figure>
+	            <img src="images/pipe-network.png" style="width:80%">
+	          </figure>
+	        </div>	
+                <div style="float: right; width: 50%;">
+	          <ul>
+	            <li>First assume injection pressure $P_{in}$ and injection rate $Q_{in}$ at injection point</li>
+                    <li>Solve fluid pressure at each fluid node</li>
+                    <li>Convert pressure to node force and solve LEM to update fracture aperture</li>
+                    <li>Repeat the above process until convergence</li>
+	          </ul>
+	          $$q = - \frac{h^3}{12\mu}\frac{dp}{dx}$$
+  	        </div>
+              </section>
+               <!-- LEM fracturing -->
+               <section>
+                  <h2>LEM fracturing</h2>
+                  <video  width="100%" controls loop>
+                     <source src="media/lem.webm" type="video/webm">
+                     Your browser does not support the video tag.
+                  </video>
+                  <p>Wong et al., (2016)</p>
+               </section>
+            </section>
+            <section>
+               <!-- ABM -->
+               <section>
+                  <h2>Agent Based Modelling of cities</h2>
+                  <video  width="125%" controls loop>
+                     <source src="media/ca-abm/abm.webm" type="video/webm">
+                     Your browser does not support the video tag.
+                  </video>
+                  <p>Soga et al., (2017)</p>
+               </section>
+               <!-- HSV2 -->
+               <section>
+                  <h2>Network analysis of Herpes Simplex Virus (HSV2)</h2>
+                  <div style="float: left; width: 50%;">
+                     <figure>
+                        <img style = "border:0;" src="images/virus/chimpanzee-rainforest.png" width="100%">
+                        <figcaption>
+                           Fossil data
+                        </figcaption>
+                     </figure>
+                  </div>
+                  <div style="float: right; width: 50%;">
+                     <figure>
+                        <img style = "border:0;" src="images/virus/dag-it.png" width="90%">
+                        <figcaption>
+                           Transmission route
+                        </figcaption>
+                     </figure>
+                  </div>
+                  <div class="block" style="clear: both; width: 100%">
+                    <i>Paranthropus boisei</i> is the intermediary species that gave humans herpes! <br/!> (Underdown et al., 2017)
+                  </div>
+               </section>
+              <!-- Boisei -->
+              <section>
+                <h2>The usual suspects</h2>
+                <figure>
+                  <img style = "border:0;" src="images/boisei.png" width="100%">
+                </figure>
+              </section>
+              <!-- ABM -->
+              <section>
+                <h2>Cellular Automata modelling of disease</h2>
+                <video  width="125%" controls loop>
+                  <source src="media/ca-hsv2.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+              </section>
+               <!-- HSV2 News -->
+               <section>
+                  <h2>Top 5% of all research outputs scored by Altmetric</h2>
+                  <figure>
+                     <img style="border:0;" src="images/virus/hsv2.png" width="100%">
+                     <figcaption>
+                        Cambridge: 24 things we learned in 2017<br/>
+                        #3. We found out who gave us herpes
+                     </figcaption>
+                  </figure>
+               </section>
+            </section>
+
             <!-- Summary -->
             <section>
                <!-- Thank you! -->
