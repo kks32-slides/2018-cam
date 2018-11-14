@@ -53,6 +53,17 @@
                <!-- Madurai -->
                <section data-background="images/madurai.jpg" data-background-size="100%">
                </section>
+               <!-- TCE -->
+               <section data-background="images/tce.png" data-background-size="100%">
+               </section>
+               <!-- IITM -->
+               <section data-background="images/iitm.jpg" data-background-size="100%">
+               </section>
+               <!-- Cambridge -->
+               <section data-background="images/krishna-cambridge.png" data-background-size="90%">
+               </section>
+            </section>
+            <section>
                <!-- Modelling soil -->
                <section>
                  <h2>Scales in modelling soil</h2>
@@ -100,44 +111,6 @@
             </section>
             <!-- Material Point Method -->
             <section>
-               <!-- Multiscale approach -->
-               <section>
-                  <h2>Multiscale modelling in geomechanics</h2>
-                  <figure>
-                     <img style = "border:0;" src="images/multiscale.png" width="100%">
-                  </figure>
-               </section>
-               <!-- Discrete Element Method -->
-               <section>
-                  <h2>Discrete Element Method</h2>
-                  <div style="float: left; width: 50%;">
-                     <ul>
-                        <li> Particle level interaction based on Newton's equation
-                           of motion
-                        </li>
-                        <br />
-                        <li> The contact force is computed as: </li>
-                        <br />
-                        <div class="block" style="clear: both; width: 85%">
-                           $F_n=\left\{ \begin{matrix} \text{              }0\text{         },\text{ }{{\delta }_{n}}>0  \\
-                           -{{k}_{n}}{{\delta }_{n}}-{{\gamma }_{n}}\frac{d{{\delta }_{n}}}{dt},\text{ }{{\delta }_{n}}<0  \\
-                           \end{matrix} \right.$
-                        </div>
-                        <br />
-                        <li> The Newton's equation of motion </li>
-                        <br />
-                        <div class="block" style="clear: both; width: 45%">
-                           $F_n =m \times a $
-                        </div>
-                     </ul>
-                  </div>
-                  <div style="float: right; width: 50%;">
-                     <video  width="90%" autoplay controls loop>
-                        <source src="media/tennis_balls.webm" type="video/webm">
-                        Your browser does not support the video tag.
-                     </video>
-                  </div>
-               </section>
                <!-- Mesh based vs Mesh-free approach -->
                <section>
                   <h2>Mesh-based vs Mesh-free techniques</h2>
@@ -177,6 +150,37 @@
                   <h2>Experimental results (Lube et al 2005)</h2>
                   <img style = "border:0;" src="images/runout_column_collapse.png" width="70%">
                </section>
+               <!-- Discrete Element Method -->
+               <section>
+                  <h2>Discrete Element Method</h2>
+                  <div style="float: left; width: 50%;">
+                     <ul>
+                        <li> Particle level interaction based on Newton's equation
+                           of motion
+                        </li>
+                        <br />
+                        <li> The contact force is computed as: </li>
+                        <br />
+                        <div class="block" style="clear: both; width: 85%">
+                           $F_n=\left\{ \begin{matrix} \text{              }0\text{         },\text{ }{{\delta }_{n}}>0  \\
+                           -{{k}_{n}}{{\delta }_{n}}-{{\gamma }_{n}}\frac{d{{\delta }_{n}}}{dt},\text{ }{{\delta }_{n}}<0  \\
+                           \end{matrix} \right.$
+                        </div>
+                        <br />
+                        <li> The Newton's equation of motion </li>
+                        <br />
+                        <div class="block" style="clear: both; width: 45%">
+                           $F_n =m \times a $
+                        </div>
+                     </ul>
+                  </div>
+                  <div style="float: right; width: 50%;">
+                     <video  width="90%" autoplay controls loop>
+                        <source src="media/tennis_balls.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                     </video>
+                  </div>
+               </section>
                <!-- Simple shear -->
                <section>
                   <h2>Micro to Macro</h2>
@@ -197,6 +201,15 @@
                      </figure>
                   </div>
                </section>
+               <!-- Material Point Method -->
+               <section>
+                  <h2>MPM column collapse</h2>
+                  <video  width="100%" autoplay controls loop>
+                     <source src="media/column-collapse.webm" type="video/webm">
+                     Your browser does not support the video tag.
+                  </video>
+               </section>
+
                <!-- Material Point Method -->
                <section>
                   <h2>MPM v DEM column collapse</h2>
@@ -268,26 +281,6 @@
                   </video>
                   <p>Horizontal velocity (m/s)</p>
                </section>
-               <!-- MPM v DEM energy -->
-               <section>
-                  <h2>MPM v DEM uniform impact (200 J)</h2>
-                  <div style="float: left; width: 50%;">
-                     <figure>
-                        <img style = "border:0;" src="images/uniform_slope_mpm_200j.png"  style="background:none; border:none; box-shadow:none;" width="100%">
-                        <figcaption>
-                           MPM
-                        </figcaption>
-                     </figure>
-                  </div>
-                  <div style="float: right; width: 50%;">
-                     <figure>
-                        <img style = "border:0;" src="images/uniform_slope_dem_200j.png" style="background:none; border:none; box-shadow:none;" width="100%">
-                        <figcaption>
-                           DEM
-                        </figcaption>
-                     </figure>
-                  </div>
-               </section>
                <!-- MPM v DEM runout -->
                <section>
                   <h2>MPM v DEM runout slope v collapse</h2>
@@ -295,6 +288,12 @@
                      <img style = "border:0;" src="images/mpm_slope_column.png" width="90%">
                   </figure>
                </section>
+               <!-- MPM two-phase -->
+               <section>
+                 <h2>MPM 2-phase formulation</h2>
+                 <img style = "border:0;" src="images/two-phase-mpm.jpg" width="60%">
+               </section>
+
                <section>
                   <h2>MPM slope failure: pore pressure changes</h2>
                   <video  width="100%" autoplay controls loop>
@@ -303,7 +302,17 @@
                   </video>
                   <p>Selborne case study of a 9 m high cut-slope slope (Soga et al., 2016)</p>
                </section>
-                           <!-- Code development -->
+               <!-- Concrete flows -->
+               <section>
+                  <h2>Slump cone MPM simulation</h2>
+                  <video  width="65%" autoplay controls loop>
+                     <source src="media/mpm-slump-cone.webm" type="video/webm">
+                     Your browser does not support the video tag.
+                  </video>
+                  <p>Wilkes et al (2018)</p>
+               </section>
+
+               <!-- Code development -->
                <section>
                  <h2>HPC MPM code</h2>
                  <div style="float: left; width: 40%;">
@@ -331,6 +340,18 @@
                    <img style = "border:0;" src="images/mpm-code-overview.png" width="80%">
                  </div>
                </section>
+               <!-- Disney MPM -->
+               <section>
+                <h2>Disney's Frozen: Snow simulation</h2>
+                <video  width="80%"  controls loop muted>
+                  <source src="media/disney-mpm-snow.mp4" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+                <p>
+                  <a href="https://www.youtube.com/watch?v=O0kyDKu8K-k">Sungkwan Park et al (2014)
+                  </a>
+                </p>
+              </section>
                <!-- Rendering-->
                <section>
                  <h2>Photo-realistic rendering</h2>
@@ -345,19 +366,6 @@
                    </figcaption>
                  </figure>
                </section>
-               <!-- Disney MPM -->
-               <section>
-                <h2>Disney's Frozen: Snow simulation</h2>
-                <video  width="80%"  controls loop muted>
-                  <source src="media/disney-mpm-snow.mp4" type="video/webm">
-                    Your browser does not support the video tag.
-                </video>
-                <p>
-                  <a href="https://www.youtube.com/watch?v=O0kyDKu8K-k">Sungkwan Park et al (2014)
-                  </a>
-                </p>
-              </section>
-
             </section>
             <!-- Underwater landslides -->
             <section>
@@ -372,10 +380,6 @@
                   </ul>
                </section>
                <!-- Submarine landslide -->
-               <section>
-                  <h2>Submarine landslides</h2>
-                  <img style = "border:0;" src="images/submarine_landslide.png" width="70%">
-               </section>
                <section>
                   <h2>MPM submarine landslide</h2>
                   <video  width="80%" autoplay controls loop>
@@ -398,15 +402,6 @@
                <section>
                   <h2>Mechanism of submarine runout</h2>
                   <img style = "border:0;" src="images/water_entrainment.png" width="100%">
-               </section>
-               <!-- MPM Water entrainment -->
-               <section>
-                  <h2>MPM submarine landslide: Water entrainment</h2>
-                  <video  width="100%" autoplay controls loop>
-                     <source src="media/slope-water-entrainment.webm" type="video/webm">
-                     Your browser does not support the video tag.
-                  </video>
-                  <p>Run-out for different water entrainment (Taka et al., 2012)</p>
                </section>
                <!-- LBM DEM a6 -->
                <section>
@@ -551,249 +546,12 @@
                      <input type="button" id="pause-button" onclick="PauseVideo('a04');PauseVideo('a4')"; this.disable=true; play-button.disable=false; value="Pause" />
                   </div>
                </section>
-               <!-- Collapse in a fluid runout evolution -->
-               <section>
-                  <h2>Collapse in a fluid: Runout evolution</h2>
-                  <div style="float: left; width: 50%;">
-                     <figure>
-                        <img style = "border:0;" src="images/runout_a04f.png" width="100%">
-                        <figcaption>
-                           a = 0.4
-                        </figcaption>
-                     </figure>
-                  </div>
-                  <div style="float: right; width: 50%;">
-                     <figure>
-                        <img style = "border:0;" src="images/runout_a4f.png" width="100%">
-                        <figcaption>
-                           a = 4
-                        </figcaption>
-                     </figure>
-                  </div>
-                  <div style="clear:both; text-align: center">
-                     <br />
-                     Critical time $\tau_c=\sqrt{H/g}$ (Staron and Hinch, 2005) <br />
-                     where, H = Height of the granular pile.
-                  </div>
-               </section>
-               <!-- LBM DEM a8 -->
-               <section>
-                  <h3>LBM - DEM simulation of granular collapse in a fluid</h3>
-                  <br/>
-                  <video  width="100%" controls loop>
-                     <source src="media/a8.webm" type="video/webm">
-                     Your browser does not support the video tag.
-                  </video>
-                  <br/>
-                  <br/>aspect ratio 'a' of 8 <br />
-               </section>
                <!-- Runout v aspect ratio -->
                <section>
                   <h2>Runout: dry vs fluid</h2>
                   <figure>
                      <img style = "border:0;" src="images/runout_fluid_dry.png" width="80%">
                      <figcaption style = "font-size: 80%; text-align: center; "><br />Dry collapse flowed further than the underwater collapse</figcaption>
-                  </figure>
-               </section>
-               <!-- Hydrodynamic radius -->
-               <section>
-                  <h2>Collapse in a fluid: Effect of permeability</h2>
-                  <p>
-                     Dirichlet boundary conditions constrain the pressure/density at the boundaries (Zou and He, 1997)
-                     <br />
-                     $\rho_0=\sum_{a}f_{a} \mbox{ and } \textbf{u}=\frac{1}{\rho_0}\sum_{a}f_{a}$
-                  </p>
-                  <div style="float: left; width: 50%;">
-                     <figure style="margin-top:5%">
-                        <img style = "border:0;" src="images/hydrodynamic_radius.png" width ="60%">
-                        <figcaption style = "font-size: 80%; text-align: center; "> <br />Reduction in radius</figcaption>
-                     </figure>
-                  </div>
-                  <div style="float: right; width: 50%;">
-                     <figure>
-                        <img style = "border:0;" src="images/carman.png" width ="100%">
-                        <figcaption style = "font-size: 80%; text-align: center;">
-                           LBM-DEM Permeability and Theoretical Solutions
-                        </figcaption>
-                     </figure>
-                  </div>
-               </section>
-               <!-- Effect of permeability -->
-               <section>
-                  <h2>Collapse in a fluid: Effect of permeability</h2>
-                  <video id="r07r" width="80%" >
-                     <source src="media/a08_r07.webm" type="video/webm">
-                     Your browser does not support the video tag.
-                  </video>
-                  <br />Reduction ‘r’=0.7R (High permeability)<br />
-                  <video id="r095r" width="79%" >
-                     <source src="media/a08_r095.webm" type="video/webm">
-                     Your browser does not support
-                     <th></th>
-                     e video tag.
-                  </video>
-                  <br />Reduction ‘r’=0.9R (Low permeability)<br />
-                  <div class="media-buttons">
-                     <input type="button" id="play-button" onclick="PlayVideo('r07r');PlayVideo('r095r')"; this.disable=true; pause-button.disable=false; value="Play" />
-                     <input type="button" id="pause-button" onclick="PauseVideo('r07r');PauseVideo('r095r')"; this.disable=true; play-button.disable=false; value="Pause" />
-                  </div>
-               </section>
-               <!-- Runout v aspect ratio -->
-               <section>
-                  <h2>Effect of permeability: runout</h2>
-                  <figure>
-                     <img style = "border:0;" src="images/runout_a08_dense.png" width="80%">
-                     <figcaption>aspect ratio 0.8</figcaption>
-                  </figure>
-               </section>
-               <!-- Effect of permeability -->
-               <section>
-                  <h2>Effect of permeability: runout</h2>
-                  <figure>
-                     <img style = "border:0;" src="images/runout_fluid.png" width="80%">
-                  </figure>
-               </section>
-               <!-- Effect of permeability -->
-               <section>
-                  <h2>Effect of permeability: kinetic energy</h2>
-                  <figure>
-                     <img style = "border:0;" src="images/ke_dry_fluid.png" width="70%">
-                  </figure>
-               </section>
-               <!-- Effect of permeability -->
-               <section>
-                  <h2>Effect of permeability: runout</h2>
-                  <figure>
-                     <img style = "border:0;" src="images/runout_energy.png" width="80%">
-                  </figure>
-               </section>
-               <!-- Effect of permeability -->
-               <section>
-                  <h2>Collapse in a fluid: Effect of permeability</h2>
-                  <h4>Hydrodynamic force (x-dir)</h4>
-                  <div style="float: left; width: 50%;">
-                     <figure>
-                        <img style = "border:0;" src="images/dense-fhf-r07.png" width="100%">
-                        <figcaption>
-                           High permeability (r = 0.7R)
-                        </figcaption>
-                     </figure>
-                  </div>
-                  <div style="float: right; width: 50%;">
-                     <figure>
-                        <img style = "border:0;" src="images/dense-fhf-r095.png" width="100%">
-                        <figcaption>
-                           Low permeability (r = 0.95R)
-                        </figcaption>
-                     </figure>
-                  </div>
-                  <div style="clear:both">
-                    <br/>
-                    Low permeability condition has large fluctuations in hydrodynamic forces.
-                  </div>
-               </section>
-               <!-- Effect of permeability -->
-               <section>
-                  <h2>Collapse in a fluid: Effect of permeability</h2>
-                  <h4>Hydrodynamic force (x-dir)</h4>
-                  <div style="float: left; width: 50%;">
-                     <figure>
-                        <img style = "border:0;" src="images/dense_r07_fhfx.png" width="100%">
-                        <figcaption>
-                           High permeability (r = 0.7R)
-                        </figcaption>
-                     </figure>
-                  </div>
-                  <div style="float: right; width: 50%;">
-                     <figure>
-                        <img style = "border:0;" src="images/dense_r095_fhfx.png" width="100%">
-                        <figcaption>
-                           Low permeability (r = 0.95R)
-                        </figcaption>
-                     </figure>
-                  </div>
-                  <div class="block" style="clear:both">
-                    <p>
-                      <br/>
-                      250 - particle at the bottom of the flow; <br/>
-                      872 - particle at middle of the flow; 1007 -  particle at the surface of the flow
-                    </p>
-                  </div>
-               </section>
-               <!-- Effect of permeability -->
-               <section>
-                  <h2>Effect of permeability: stress</h2>
-                  <figure>
-                     <img style = "border:0;" src="images/permeability_stress.png" width="55%">
-                  </figure>
-               </section>
-               <!-- Effect of permeability -->
-               <section>
-                  <h2>Collapse in a fluid: Effect of permeability</h2>
-                  <div style="float: left; width: 100%;">
-                     <figure>
-                        <img style = "border:0;" src="images/pressure-velocity.png" width="55%">
-                        <figcaption>
-                           normalised pressure vs. velocity
-                        </figcaption>
-                     </figure>
-                  </div>
-                  <!--
-                  <div style="float: right; width: 50%;">
-                     <figure>
-                        <img style = "border:0;" src="images/shear-velocity.png" width="100%">
-                        <figcaption>
-                           normalised shear vs. velocity
-                        </figcaption>
-                     </figure>
-                  </div>
-                -->
-               </section>
-               <!-- Effect of permeability -->
-               <section>
-                  <h2>Effect of permeability: pore-water pressure</h2>
-                  <figure>
-                     <img style = "border:0;" src="images/permeability_pwp.png" width="70%">
-                  </figure>
-               </section>
-               <!-- Effect of permeability -->
-               <section>
-                  <h2>Effect of permeability: effective stress</h2>
-                  <figure>
-                     <img style = "border:0;" src="images/effective_stress_a08.png" width="70%">
-                  </figure>
-                  High permeability - high effective stresses at the flow front (frictional resistance)<br/>
-                  Low permeability - no effective stresses at the flow front (hydroplaning)
-               </section>
-               <!-- Effect of permeability -->
-               <section>
-                  <h2>Effect of permeability: drag vs hydroplaning</h2>
-                  <div style="float: left; width: 50%;">
-                     <figure>
-                        <img style = "border:0;" src="images/lbm07dense_streamlines.png" width="100%">
-                        <figcaption>
-                           High permeability (r = 0.7 R)
-                        </figcaption>
-                     </figure>
-                  </div>
-                  <div style="float: right; width: 50%;">
-                     <figure>
-                        <img style = "border:0;" src="images/lbm095dense_streamlines.png" width="100%">
-                        <figcaption>
-                           Low permeability (r = 0.95 R)
-                        </figcaption>
-                     </figure>
-                  </div>
-                  <div style="clear:both;">
-                    <br/>High permeable flow front experiences drag, while low permeable flow experiences hydroplaning.
-                  </div>
-               </section>
-               <!-- Runout v aspect ratio -->
-               <section>
-                  <h2>Effect of permeability: runout (loose)</h2>
-                  <figure>
-                     <img style = "border:0;" src="images/runout_a08_loose.png" width="80%">
-                     <figcaption>aspect ratio 0.8 (loose)</figcaption>
                   </figure>
                </section>
                <!-- Effect of slope -->
@@ -930,27 +688,11 @@
                      <figcaption>runout evolution ('a' of 0.8)</figcaption>
                   </figure>
                </section>
-               <!-- CPU v GPU -->
-               <section>
+              <!-- CPU v GPU -->
+              <section>
                  <h3>CPU v GPU</h3>
                  <img style = "border:0;" src="images/cpu_gpu.png" width ="100%">
                </section>
-              <section>
-                <h2>CPU v GPU</h2>
-                <video  width="80%" controls loop>
-                  <source src="media/cpu-gpu.mp4" type="video/webm">
-                    Your browser does not support the video tag.
-                </video>
-                <p>
-                  <a href="https://www.youtube.com/watch?v=ZrJeYFxpUyQ">MythBusters / Nvidia
-                  </a>
-                </p>
-              </section>
-
-              <section>
-                <h3>Super computing</h3>
-                <img src="images/super-computer.png" width="80%">
-              </section>
 
                <!-- GPU -->
                <section>
@@ -1007,14 +749,6 @@
 
               <!-- Tension test -->
               <section>
-                <h2>LEM Tension test</h2>
-                <figure>
-	          <img src="images/lem_tension_test.png" style="width:100%">
-	        </figure>
-	      </section>
-              
-              <!-- Tension test -->
-              <section>
                 <h2>LEM: Tension test (uniform)</h2>
                 <div style="float: left; width: 50%;">
                   <video  id="lem_uniform" width="100%">
@@ -1055,7 +789,14 @@
                 </div>
               </section>
 
-                                          
+              <!-- Tension test -->
+              <section>
+                <h2>LEM Tension test</h2>
+                <figure>
+	          <img src="images/lem_tension_test.png" style="width:100%">
+	        </figure>
+	      </section>
+                                                        
               <!-- Tension test -->
               <section>
                 <h2>LEM Tension test</h2>
@@ -1106,11 +847,46 @@
                <section>
                   <h2>Agent Based Modelling of cities</h2>
                   <video  width="125%" controls loop>
-                     <source src="media/ca-abm/abm.webm" type="video/webm">
+                     <source src="media/abm.webm" type="video/webm">
                      Your browser does not support the video tag.
                   </video>
                   <p>Soga et al., (2017)</p>
                </section>
+               <!-- HPC -->
+               <section>
+                 <h3>Super computing</h3>
+                 <img style = "border:0;" src="images/super-computer.png" width="80%">
+               </section>
+               <!-- ABM scaling -->
+               <section>
+                 <h3>Scaling ABM: Time</h3>
+                 <img style = "border:0;" src="images/abm-scaling-time.png" width="90%">
+               </section>
+
+               <!-- ABM scaling -->
+               <section>
+                 <h3>Scaling ABM: Speed-up</h3>
+                 <img style = "border:0;" src="images/abm-scaling.png" width="90%">
+               </section>
+               <!-- Pavement condition -->
+               <section>
+                 <h3>Pavement condition</h3>
+                 <figure>
+                   <img style = "border:0;" src="images/pavement-condition.gif" width="80%">
+                   <figcaption>Degradation of pavement in SF (Bingyu et al., 2018)</figcaption>
+                 </figure>
+               </section>
+               
+               <!-- ABM -->
+               <section>
+                  <h2>Agent Based Modelling of Tokyo</h2>
+                  <video  width="125%" controls loop>
+                     <source src="media/tokyo-abm.webm" type="video/webm">
+                     Your browser does not support the video tag.
+                  </video>
+                  <p>Bingyu et al., (2018)</p>
+               </section>
+
                <!-- HSV2 -->
                <section>
                   <h2>Network analysis of Herpes Simplex Virus (HSV2)</h2>
@@ -1164,22 +940,26 @@
 
             <!-- Summary -->
             <section>
-               <!-- Thank you! -->
-               <section  data-background="images/themes/cb-geo-banner.png" data-background-size="100%" data-background-opacity="50%">
-                  <br/>
-                  <h1><font color="yellow">Thank you!</font></h1>
-                  <br/><br/>
-                  <h2>
-                     <font color="white">
-                     Krishna Kumar
-                     </font>
-                  </h2>
-                  <h3>
-                     <font color="white">
-                     kks32@cam.ac.uk
-                     </font>
-                  </h3>
-               </section>
+              <!-- UT -->
+              <section data-background="images/ut.jpg" data-background-size="80%">
+              </section>
+
+              <!-- Thank you! -->
+              <section  data-background="images/themes/cb-geo-banner.png" data-background-size="100%" data-background-opacity="50%">
+                <br/>
+                <h1><font color="yellow">Thank you!</font></h1>
+                <br/><br/>
+                <h2>
+                  <font color="white">
+                    Krishna Kumar
+                  </font>
+                </h2>
+                <h3>
+                  <font color="white">
+                    kks32@cam.ac.uk
+                  </font>
+                </h3>
+              </section>
             </section>
             <!-- Special thanks to Chitra atthai! -->
          </div>
